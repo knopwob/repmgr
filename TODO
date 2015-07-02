@@ -20,8 +20,8 @@ Planned feature improvements
 * Create the repmgr user/database on "master register".
 
 * Use pg_basebackup for the data directory, and ALSO rsync for the
-configuration files.
+  configuration files.
 
-* Use pg_basebackup -X s
-  NOTE: this can be used by including `-X s` in the configuration parameter
-  `pg_basebackup_options`
+* Have pg_basebackup use replication slots, if and when support for
+  this is added; see:
+    http://www.postgresql.org/message-id/555DD2B2.7020000@gmx.net
